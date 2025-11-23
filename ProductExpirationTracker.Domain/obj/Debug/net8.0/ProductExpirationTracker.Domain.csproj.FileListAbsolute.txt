@@ -1,0 +1,15 @@
+D:\UNIVERS\4CURSAKA\ProductExpirationTracker.Backend\ProductExpirationTracker.Domain\bin\Debug\net8.0\ProductExpirationTracker.Domain.deps.json
+D:\UNIVERS\4CURSAKA\ProductExpirationTracker.Backend\ProductExpirationTracker.Domain\bin\Debug\net8.0\ProductExpirationTracker.Domain.dll
+D:\UNIVERS\4CURSAKA\ProductExpirationTracker.Backend\ProductExpirationTracker.Domain\bin\Debug\net8.0\ProductExpirationTracker.Domain.pdb
+D:\UNIVERS\4CURSAKA\ProductExpirationTracker.Backend\ProductExpirationTracker.Domain\obj\Debug\net8.0\ProductExpirationTracker.Domain.GeneratedMSBuildEditorConfig.editorconfig
+D:\UNIVERS\4CURSAKA\ProductExpirationTracker.Backend\ProductExpirationTracker.Domain\obj\Debug\net8.0\ProductExpirationTracker.Domain.AssemblyInfoInputs.cache
+D:\UNIVERS\4CURSAKA\ProductExpirationTracker.Backend\ProductExpirationTracker.Domain\obj\Debug\net8.0\ProductExpirationTracker.Domain.AssemblyInfo.cs
+D:\UNIVERS\4CURSAKA\ProductExpirationTracker.Backend\ProductExpirationTracker.Domain\obj\Debug\net8.0\ProductExpirationTracker.Domain.csproj.CoreCompileInputs.cache
+D:\UNIVERS\4CURSAKA\ProductExpirationTracker.Backend\ProductExpirationTracker.Domain\obj\Debug\net8.0\ProductExpirationTracker.Domain.sourcelink.json
+D:\UNIVERS\4CURSAKA\ProductExpirationTracker.Backend\ProductExpirationTracker.Domain\obj\Debug\net8.0\ProductExpirationTracker.Domain.dll
+D:\UNIVERS\4CURSAKA\ProductExpirationTracker.Backend\ProductExpirationTracker.Domain\obj\Debug\net8.0\refint\ProductExpirationTracker.Domain.dll
+D:\UNIVERS\4CURSAKA\ProductExpirationTracker.Backend\ProductExpirationTracker.Domain\obj\Debug\net8.0\ProductExpirationTracker.Domain.pdb
+D:\UNIVERS\4CURSAKA\ProductExpirationTracker.Backend\ProductExpirationTracker.Domain\obj\Debug\net8.0\ref\ProductExpirationTracker.Domain.dll
+D:\UNIVERS\4CURSAKA\ProductExpirationTracker.Backend\ProductExpirationTracker.Domain\bin\Debug\net8.0\ProductExpirationTracker.Domain.runtimeconfig.json
+D:\UNIVERS\4CURSAKA\ProductExpirationTracker.Backend\ProductExpirationTracker.Domain\obj\Debug\net8.0\ProductExpirationTracker.Domain.csproj.AssemblyReference.cache
+D:\UNIVERS\4CURSAKA\ProductExpirationTracker.Backend\ProductExpirationTracker.Domain\obj\Debug\net8.0\ProductExpirationTracker.Domain.genruntimeconfig.cache
