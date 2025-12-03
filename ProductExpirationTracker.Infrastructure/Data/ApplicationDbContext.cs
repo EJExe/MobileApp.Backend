@@ -8,7 +8,7 @@ public class ApplicationDbContext : DbContext
     public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options)
         : base(options)
     {
-        Database.MigrateAsync;
+        //Database.MigrateAsync;
     }
 
     public DbSet<Product> Products { get; set; }
@@ -34,9 +34,14 @@ public class ApplicationDbContext : DbContext
             
             entity.Property(e => e.ArchiveReason)
                 .HasConversion<string>();
+
+            entity.Ignore(e => e.IsArchived);
+            entity.Ignore(e => e.IsExpired);
+            entity.Ignore(e => e.DaysUntilExpiration);
         });
     }
 }
+
 
 
 

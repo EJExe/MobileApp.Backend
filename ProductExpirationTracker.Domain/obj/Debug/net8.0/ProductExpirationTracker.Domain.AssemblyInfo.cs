@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ProductExpirationTracker.Domain")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ac1750dba43a080ab45b52ee08ce3891f119f7dc")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+651fd67d34784b68dac795db33784278ed2c7ca5")]
 [assembly: System.Reflection.AssemblyProductAttribute("ProductExpirationTracker.Domain")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ProductExpirationTracker.Domain")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

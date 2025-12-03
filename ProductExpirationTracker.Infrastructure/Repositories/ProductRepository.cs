@@ -26,15 +26,17 @@ public class ProductRepository : IProductRepository
 
     public async Task<IEnumerable<Product>> GetActiveAsync(CancellationToken cancellationToken = default)
     {
+        // ÈÑÏÐÀÂËÅÍÎ: Áûëî p.IsArchived, ñòàëî p.ArchivedDate == null
         return await _context.Products
-            .Where(p => !p.IsArchived)
+            .Where(p => p.ArchivedDate == null)
             .ToListAsync(cancellationToken);
     }
 
     public async Task<IEnumerable<Product>> GetArchivedAsync(CancellationToken cancellationToken = default)
     {
+        // ÈÑÏÐÀÂËÅÍÎ: Áûëî p.IsArchived, ñòàëî p.ArchivedDate != null
         return await _context.Products
-            .Where(p => p.IsArchived)
+            .Where(p => p.ArchivedDate != null)
             .ToListAsync(cancellationToken);
     }
 
@@ -90,7 +92,3 @@ public class ProductRepository : IProductRepository
         return product;
     }
 }
-
-
-
-

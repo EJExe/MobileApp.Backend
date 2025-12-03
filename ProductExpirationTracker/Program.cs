@@ -1,6 +1,7 @@
 using Microsoft.EntityFrameworkCore;
 using ProductExpirationTracker.Application.Interfaces;
 using ProductExpirationTracker.Application.Services;
+using ProductExpirationTracker.Infrastructure.Services;
 using ProductExpirationTracker.Domain.Interfaces;
 using ProductExpirationTracker.Infrastructure.Data;
 using ProductExpirationTracker.Infrastructure.Repositories;
@@ -22,6 +23,8 @@ builder.Services.AddScoped<IProductRepository, ProductRepository>();
 
 // Services
 builder.Services.AddScoped<IProductService, ProductService>();
+// Stats service (implementation lives in Infrastructure and uses the DB context)
+builder.Services.AddScoped<IStatsService, StatsService>();
 
 // CORS
 builder.Services.AddCors(options =>
@@ -48,13 +51,24 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseCors("AllowReactNative");
-app.UseAuthorization();
 app.MapControllers();
 
 using (var scope = app.Services.CreateScope())
 {
-    var db = scope.ServiceProvider.GetRequiredService<ApplicationDbContext>();
-    db.Database.Migrate();
+    try
+    {
+        var logger = scope.ServiceProvider.GetRequiredService<ILogger<Program>>();
+        var db = scope.ServiceProvider.GetRequiredService<ApplicationDbContext>();
+        logger.LogInformation("Applying pending migrations (if any)...");
+        await db.Database.MigrateAsync();
+        logger.LogInformation("Database migrations applied.");
+    }
+    catch (Exception ex)
+    {
+        var logger = scope.ServiceProvider.GetRequiredService<ILogger<Program>>();
+        logger.LogError(ex, "An error occurred while migrating the database.");
+        throw;
+    }
 }
 
 app.Use(async (context, next) =>
